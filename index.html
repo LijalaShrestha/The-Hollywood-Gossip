@@ -1,0 +1,156 @@
+<!--Declaration of html5-->
+<!doctype html>
+<!--Starting html tag-->
+<html>
+	
+	<!--Starting of head-->
+	<head>
+		<meta charset="UTF-8"/>
+		<title>HOME | The Hollywood Gossip</title>
+		<meta name = "description" content = "Your very own source for Hollywood news, entertainment and celebrity news. Check out the new Hollywood gossips, pictures, videos and fashion and style ideas!"/>
+
+		<!--title logo-->
+    	<link rel="shortcut icon" type="images/x-icon" href="images/logo-small.jpg"/>
+
+    	<!--internal css-->
+		<style type="text/css">
+			
+			*{
+				margin: 0px;
+			}
+
+			a
+			{
+				text-decoration: none;
+				font-size: 20px;
+				color: #ffffff;
+				font-family: arial;
+				padding-top:40px; 
+			}
+			
+			#navlink
+			{
+				padding-top:40px;
+				float:left; 
+				padding-left:40px;
+			}
+
+			#nav_link
+			{
+				list-style-type: none;
+				padding-left: 0px;
+			}
+
+			nav li a:hover
+			{
+				color: #ff0000;
+			}
+
+			#logo
+			{
+				width:200px;
+				height: 70px;
+				padding-left:30px;
+				padding-top: 15px;
+			}
+
+			h1
+			{
+				color: #ffffff;
+				font-family: Arial;
+				padding-top:140px;
+				padding-left:30px;
+
+			}
+
+			#slider
+			{
+				padding-top:110px;
+				height:250px;
+				width:400px;
+				float:right;
+				padding-right:10px;
+			}
+
+
+		</style>
+
+	</head>
+	<!--End of head-->
+
+	<!--Starting of body-->
+	<body style="background-image: url('images/Hollywood-Wallpaper.jpg'); background-size: cover; background-attachment:fixed;">
+		
+		<!--Division for the header-->
+		<div id="header" style="background-color:#32403B; width:100%; height:100px; top:0px; position:fixed; ">
+
+			<!--Division for the navigation bar-->
+			<div id="navbar" style="background-color:#32403B; width:57%; height:100px; top:0px; float:right;">
+				<!--Links-->
+				<nav>
+					<ul id="nav_link">
+						<li id="navlink" class="active"><a href ="index.html">HOME</a></li>
+						<li id="navlink"><a href ="pages/gossips.html">GOSSIPS</a></li>
+						<li id="navlink"><a href ="pages/photos.html">PHOTOS</a></li>
+						<li id="navlink"><a href ="pages/videos.html">VIDEOS</a></li>
+						<li id="navlink"><a href ="pages/fashion.html">FASHION</a></li>
+						<li id="navlink"><a href ="pages/more.html">MORE</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--Logo of website-->
+			<a href="index.html"><img src = "images/logo.jpg" id = "logo" title = "TheHollywoodGossipLogo" style="position:fixed;"/></a>
+		</div>
+
+		
+		<main>
+			<!--Javascript-->
+			<img id="slider" src="images/slider1.jpg" name="slide" width="700px" height="500px">
+
+			<script type="text/javascript">
+				var image1=new Image();
+				image1.src="images/slider1.jpg";
+				var image2=new Image();
+				image2.src="images/slider2.jpg";
+				var image3=new Image();
+				image3.src="images/slider3.jpg";
+				var image4=new Image();
+				image4.src="images/slider4.jpg";
+			
+				
+				var step=1;
+				function slide_pictures()
+				{
+					document.images.slide.src=eval("image"+step+".src");
+					if (step<4)
+					{
+						step++;
+					}
+					else
+					{
+						step=1;
+					}
+					//call function "slide_pictures()" every 2 seconds
+					setTimeout("slide_pictures()",2000);
+				}
+				slide_pictures();
+
+			</script>
+
+			<center>
+				<h1>Your very own source for Hollywood news, entertainment and celebrity news. Check out the new Hollywood gossips, pictures, videos, and fashion and style ideas!</h1>
+			</center>
+
+		</main>
+
+		<!--footer division-->
+		<footer style="background-color: #32403B; width: 100%; height: 50px; bottom: 0px; font-family: arial; color: #D6D6D6; padding-top: 10px; margin-top: 70px;position:fixed"><center>All Rights Reserved<br> &copyLijalaShrestha2016</center>
+		</footer>
+	
+		
+
+	</body>
+	<!--End of body-->
+
+</html>
+<!--End of html tag-->
