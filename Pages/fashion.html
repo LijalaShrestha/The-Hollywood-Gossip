@@ -1,0 +1,242 @@
+<!--Declaration of html5-->
+<!doctype html>
+<!--Starting html tag-->
+<html>
+	
+	<!--Starting of head-->
+	<head>
+		<meta charset="UTF-8"/>
+		<title>FASHION | The Hollywood Gossip</title>
+		<meta name = "description" content = "Your very own source for Hollywood news, entertainment and celebrity news. Check out the new Hollywood gossips, pictures, videos and fashion and style ideas!"/>
+
+		<!-- External CSS -->
+    	<link rel="stylesheet" href="../css/hollywood.css" type="text/css">
+
+    	<!--title logo-->
+    	<link rel="shortcut icon" type="../images/x-icon" href="../images/logo-small.jpg"/>
+
+		<!--internal css-->
+		<style type="text/css">
+
+			*{
+				margin: 0px;
+			}
+
+			a
+			{
+				text-decoration: none;
+				font-size: 20px;
+				color: #ffffff;
+				font-family: arial;
+				padding-top:40px; 
+			}
+			
+			#navlink
+			{
+				padding-top:40px;
+				float:left; 
+				padding-left:40px;
+			}
+
+			#nav_link
+			{
+				list-style-type: none;
+				padding-left: 0px;
+			}
+
+			nav li a:hover
+			{
+				color: #ff0000;
+			}
+
+			#logo
+			{
+				width:200px;
+				height: 70px;
+				padding-left:30px;
+				padding-top: 15px;
+			}
+
+			h1
+			{
+				font-family: Arial;
+				color: #696969;
+				padding-top: 20px;
+				padding-left: 40px;
+			}
+
+			#headlines
+            {
+            	font-family:Arial;
+            	list-style-type:none;
+            }
+
+             #news
+            {
+            	text-decoration:none;
+            	color:#32403B;
+            }
+
+             li #news:hover
+			{
+				color: #ff0000;
+			}
+
+			.top_button
+            {
+                
+                right: 34px;
+				bottom:58px;
+				position: fixed;
+				height: 40px;
+				width: 100px;
+				color: white;
+				background-color:#ff0000;
+            }
+
+            section
+			{
+				margin-bottom: 200%;
+				margin-top:80%;
+            }
+
+             #youtube
+            {
+            	float:right;
+            	height:50px;
+            	width:100px;
+            	margin-top:0px;
+            	margin-right:10px;
+            	color: red;
+            }
+
+		</style>
+
+	</head>
+	<!--End of head-->
+
+	<!--Starting of body-->
+	<body style="background-image: url('../images/background.jpg'); background-size: cover; background-attachment:fixed;">
+		
+		<!--Division for the header-->
+		<div id="header" style="background-color:#32403B; width:100%; height:100px; top:0px; position:fixed; ">
+
+			<!--Division for the navigation bar-->
+			<div id="navbar">
+				<!--Links-->
+				<nav>
+					<ul id="nav_link">
+						<li id="navlink"><a href ="../index.html">HOME</a></li>
+						<li id="navlink"><a href ="gossips.html">GOSSIPS</a></li>
+						<li id="navlink"><a href ="photos.html">PHOTOS</a></li>
+						<li id="navlink"><a href ="videos.html">VIDEOS</a></li>
+						<li id="navlink"><a href ="fashion.html">FASHION</a></li>
+						<li id="navlink"><a href ="more.html">MORE</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--Logo of website-->
+			<a href="../index.html"><img src = "../images/logo.jpg" id = "logo" title = "TheHollywoodGossipLogo" style="position:fixed;"/></a>
+		</div>
+
+		<!--white division-->
+		<main id="white-div">
+			
+			<div id="pageWrapper">
+			<h1><b>FASHION AND STYLE</b></h1>
+
+			<!--javascript to open link in new browser-->
+			<button id="youtube" onclick="youtube()">CLICK FOR MORE!</button>
+			<script>
+				function youtube()
+				{
+					window.open("https://www.youtube.com/results?search_query=celebrities+style+steal","_blank","width=800,height=400");
+				}
+			</script>
+
+		
+
+				<!--headlines -->
+                <ul id="headlines">
+
+                    <li style="float:left; padding-left:20px;" ><a href="#miley-cyrus" id="news" style="font-size: 1.2em;"><img src="../images/miley-cyrus.jpg" style="width:300px; height: 250px; padding-top:100px; padding-left:10px;"><p style="padding-left:9px">MILEY CYRUS STYLE STEAL</p></a></li>
+
+                    <li style="float:top" ><a id="news" href="#kendall-kylie" style="font-size: 1.2em;"><img src="../images/kendall-kylie.jpg" style="width:400px; height:250px; padding-top:100px; padding-left:55px"><p style="padding-left:32%">KEEPING UP WITH THE JENNERS</p></a></li>
+
+                    <li style="float:right; margin-top: -280px; padding-right: 60px; padding-left:40px"><a id="news" href="#selena-gomez" style="font-size: 1.2em;"><img src="../images/gomez.jpg" style="width:300px; height:250px; padding-top:0px; padding-left:40px;padding-right: 20px"><p style="padding-left:40px;">SELENA'S HEATLESS WAVES</p></a></li>
+
+                    <li style="float:left; padding-left:20px;"><a id="news" href="#jennifer-lawrence" style="font-size: 1.2em;"><img src="../images/lawrence.jpg" style="width:300px; height:300px; padding-top:60px; padding-left:10px;"><p style="padding-left:9px;">JENNIFER LAWRENCE STYLE<br> STEAL: MAKEUP AND HAIR</p></a></li>
+
+                    <li style="float:top"><a id="news" href="#taylor-swift" style="font-size: 1.2em;"><img src="../images/swift.jpg" style="width:300px; height:300px; padding-top:60px; padding-left:8.8%"><p style="padding-left:35%">GET THE LOOK OF T. SWIFT</p></a></li>
+
+                    <li style="float:right; margin-top: -320px; padding-right: 60px; padding-left:40px"><a id="news" href="#ariana-grande" style="font-size: 1.2em;"><img src="../images/grande.jpg" style="width:300px; height:350px; padding-top:0px; padding-left:40px;padding-right: 20px"><p style="padding-left:40px;">GET THE LOOK: ARIANA GRANDE</p></a></li>
+                </ul>
+
+            </section> 
+
+            <!--Go to top button-->
+            <a href="#pageWrapper"> <button class="top_button">T O P ^</button></a>
+
+            <!--style number 1-->
+            <section id="miley-cyrus">
+            	<span style="font-size:1.5em; font-family: Arial; color:#32403B; padding-left: 30px;"><center><b>MILEY CYRUS STYLE STEAL</b></center></span>
+
+            	<center><p id="style-miley" style="font-size:1.3em; font-family:Arial; padding-left:10px;">Wanna steal Miley Cyrus's style? Then check this video out to find out how!</p></center>
+            	<center><iframe width="700" height="400" src="https://www.youtube.com/embed/HE_KaMKuUFw" frameborder="0" allowfullscreen style="padding-top:20px;"></iframe></center>
+            </section>
+
+             <!--style number 2-->
+            <section id="kendall-kylie">
+            	<span style="font-size:1.5em; font-family: Arial; color:#32403B; padding-left: 30px;"><center><b>KEEPING UP WITH THE JENNERS</b></center></span>
+
+            	<center><p id="style-kendall-kylie" style="font-size:1.3em; font-family:Arial; padding-left:10px;">Check out this video to <i>Keep Up With The</i> fashion and style of <i>The Jenners!</i></p></center>
+            	<center><iframe width="700" height="400" src="https://www.youtube.com/embed/guVfKsRasOs" frameborder="0" allowfullscreen style="padding-top:20px;"></iframe></center>
+            </section>
+
+             <!--style number 3-->
+            <section id="selena-gomez">
+            	<span style="font-size:1.5em; font-family: Arial; color:#32403B; padding-left: 30px;"><center><b>HOW TO GET SELENA'S HEATLESS WAVES?</b></center></span>
+
+            	<center><p id="style-selena-gomez" style="font-size:1.3em; font-family:Arial; padding-left:10px;">Ever wondered how to get natural beachy waves without heat? Check this video to find out!</p></center>
+            	<center><iframe width="700" height="400" src="https://www.youtube.com/embed/TtHHek3ev5Y" frameborder="0" allowfullscreen style="padding-top:20px;"></iframe></center>
+            </section>
+
+            <!--style number 4-->
+            <section id="jennifer-lawrence">
+            	<span style="font-size:1.5em; font-family: Arial; color:#32403B; padding-left: 30px;"><center><b>JENNIFER LAWRENCE STYLE STEAL: MAKEUP AND HAIR</b></center></span>
+
+            	<center><p id="style-jennifer-lawrence" style="font-size:1.3em; font-family:Arial; padding-left:10px;">Stealing Jennifer Lawrence's style</p></center>
+            	<center><iframe width="700" height="400" src="https://www.youtube.com/embed/iygIdpTM1k0" frameborder="0" allowfullscreen style="padding-top:20px;"></iframe></center>
+            </section>
+
+            <!--style number 5-->
+            <section id="taylor-swift">
+            	<span style="font-size:1.5em; font-family: Arial; color:#32403B; padding-left: 30px;"><center><b>TAYLOR SWIFT INSPIRED OUTFITS</b></center></span>
+
+            	<center><p id="style-jennifer-lawrence" style="font-size:1.3em; font-family:Arial; padding-left:10px;">We know there are a lot of Swifties out there who wish to look like their Queen. Hope this video helps you to stay inspired!</p></center>
+            	<center><iframe width="700" height="400" src="https://www.youtube.com/embed/rHi5aaF9-Es" frameborder="0" allowfullscreen style="padding-top:20px;"></iframe></center>
+            </section>
+
+            <!--style number 6-->
+            <section id="ariana-grande">
+            	<span style="font-size:1.5em; font-family: Arial; color:#32403B; padding-left: 30px;"><center><b>GET THE LOOKS: ARIANA GRANDE</b></center></span>
+
+            	<center><p id="style-jennifer-lawrence" style="font-size:1.3em; font-family:Arial; padding-left:10px;">Ariana Grande style steal</p></center>
+            	<center><iframe width="700" height="400" src="https://www.youtube.com/embed/pAdtrulWEpY" frameborder="0" allowfullscreen style="padding-top:20px;"></iframe></center>
+            </section>
+
+    
+		</main>
+
+		<!--footer division-->
+		<footer>
+			<center>All Rights Reserved<br> &copyLijalaShrestha2016</center>
+		</footer>
+	
+		
+
+	</body>
+	<!--End of body-->
+
+</html>
+<!--End of html tag-->
