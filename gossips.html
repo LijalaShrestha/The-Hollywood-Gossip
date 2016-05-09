@@ -1,0 +1,289 @@
+<!--Declaration of html5-->
+<!doctype html>
+<!--Starting html tag-->
+<html>
+	
+	<!--Starting of head-->
+	<head>
+		<meta charset="UTF-8"/>
+		<title>GOSSIPS | The Hollywood Gossip</title>
+		<meta name = "description" content = "Your very own source for Hollywood news, entertainment and celebrity news. Check out the new Hollywood gossips, pictures, videos and fashion and style ideas!"/>
+
+		<!-- External CSS -->
+    	<link rel="stylesheet" href="../css/hollywood.css" type="text/css">
+
+		<!--title logo-->
+    	<link rel="shortcut icon" type="../images/x-icon" href="../images/logo-small.jpg"/>
+		
+    	<!--internal css-->
+		<style type="text/css">
+
+			*{
+				margin: 0px;
+			}
+
+			#menu
+			{
+				text-decoration: none;
+				font-size: 20px;
+				color: #ffffff;
+				font-family: arial;
+				padding-top:40px; 
+			}
+			
+			#navlink
+			{
+				padding-top:40px;
+				float:left; 
+				padding-left:40px;
+			}
+
+			#nav_link
+			{
+				list-style-type: none;
+				padding-left: 0px;
+
+			}
+
+			nav li #menu:hover
+			{
+				color: #ff0000;
+			}
+
+			#logo
+			{
+				width:200px;
+				height: 70px;
+				padding-left:30px;
+				padding-top: 15px;
+			}
+
+			h1
+			{
+				font-family: Arial;
+				color: #696969;
+				padding-top: 20px;
+				padding-left: 40px;
+			}
+
+			section
+			{
+				margin-bottom: 150%;
+            }
+
+            .top_button
+            {
+                
+                right: 34px;
+				bottom:58px;
+				position: fixed;
+				height: 40px;
+				width: 100px;
+				color: white;
+				background-color:#ff0000;
+            }
+
+            #headlines
+            {
+            	font-family:Arial;
+            	list-style-type:none;
+            }
+
+            #news
+            {
+            	text-decoration:none;
+            	color:#32403B;
+            }
+
+            li #news:hover
+			{
+				color: #ff0000;
+			}
+
+		</style>
+
+	</head>
+	<!--End of head-->
+
+	<!--Starting of body-->
+	<body style="background-image: url('../images/background.jpg'); background-size: cover; background-attachment:fixed;">
+		
+		<!--Division for the header-->
+		<div id="header" style="background-color:#32403B; width:100%; height:100px; top:0px; position:fixed; ">
+
+			<!--Division for the navigation bar-->
+			<div id="navbar">
+				<!--Links-->
+				<nav>
+					<ul id="nav_link">
+						<li id="navlink"><a id="menu" href ="../index.html">HOME</a></li>
+						<li id="navlink"><a id="menu" href ="gossips.html">GOSSIPS</a></li>
+						<li id="navlink"><a id="menu" href ="photos.html">PHOTOS</a></li>
+						<li id="navlink"><a id="menu" href ="videos.html">VIDEOS</a></li>
+						<li id="navlink"><a id="menu" href ="fashion.html">FASHION</a></li>
+						<li id="navlink"><a id="menu"href ="more.html">MORE</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--Logo of website-->
+			<a href="../index.html"><img src = "../images/logo.jpg" id = "logo" title = "TheHollywoodGossipLogo" style="position:fixed;"/></a>
+		</div>
+
+		<!--white division-->
+		<main id="white-div">
+			
+			<div id="pageWrapper">
+			<h1><b>GOSSIPS</b></h1>
+
+			<!--Javascript-->
+			<center><img id="slider" src="../images/adambehati-wallpaper.jpg" name="slide" width="900" height="350" style="padding-top:20px">
+
+			<script type="text/javascript">
+				var image1=new Image();
+				image1.src="../images/selena-wallpaper.jpg";
+				var image2=new Image();
+				image2.src="../images/gunsnroses-wallpaper.jpg";
+				var image3=new Image();
+				image3.src="../images/adambehati-wallpaper.jpg";
+				var image4=new Image();
+				image4.src="../images/kylie-wallpaper.jpg";
+			
+				
+				var step=1;
+				function slide_pictures()
+				{
+					document.images.slide.src=eval("image"+step+".src");
+					if (step<4)
+					{
+						step++;
+					}
+					else
+					{
+						step=1;
+					}
+					//call function "slide_pictures()" every 2 seconds
+					setTimeout("slide_pictures()",2000);
+				}
+				slide_pictures();
+
+			</script>
+			</center>
+
+
+			<section >
+
+                <!--headlines -->
+                <ul id="headlines">
+
+                    <li style="float:left; padding-left:20px;" ><a href="#gunsnroses" id="news" style="font-size: 1.2em;"><img src="../images/GunsnRoses.jpg" style="width:300px; height: 200px; padding-top:40px; padding-left:10px;"><p style="padding-left:9px">GUNS N' ROSES PLANNING TRIBUTE <br>TO LATE PRINCE AT THE COACHELLA <br> MUSIC FESTIVAL</p></a></li>
+
+                    <li style="float:top" ><a id="news" href="#ariana-grande" style="font-size: 1.2em;"><img src="../images/ariana-grande.jpg" style="width:300px; height:200px; padding-top:40px; padding-left:55px"><p style="padding-left:35%">ARIANA GRNADE'S MOM TOTALLY<br> FREAKING OUT AFTER HEARING<br> HER NEW ALBUM</p></a></li>
+
+                    <li style="float:right; margin-top: -270px; padding-right: 60px; padding-left:40px"><a id="news" href="#bruce-jenner" style="font-size: 1.2em;"><img src="../images/bruce-jenner.jpg" style="width:300px; height:200px; padding-top:0px; padding-left:40px;padding-right: 20px"><p style="padding-left:40px;">KOURTNEY KARDASHIAN'S<br>SON 'UNCOMFORTABLE' BY<br>CAITLYN JENNER</p></a></li>
+
+                    <li style="float:left; padding-left:20px;"><a id="news" href="#kylie-jenner" style="font-size: 1.2em;"><img src="../images/kylie.jpg" style="width:300px; height:250px; padding-top:60px; padding-left:10px;"><p style="padding-left:9px;">KYLIE JENNER CALLS HERSELF<br>AN 'INSPIRATION' TO YOUNG<br>GIRLS</p></a></li>
+
+                    <li style="float:top"><a id="news" href="#selena-gomez" style="font-size: 1.2em;"><img src="../images/selena-gomez.jpg" style="width:300px; height:250px; padding-top:60px; padding-left:8.8%"><p style="padding-left:35%">SELENA GOMEZ: 'I WANNA SHOW<br> PEOPLE THAT I CAN SING'</p></a></li>
+
+                    <li style="float:right; margin-top: -300px; padding-right: 60px; padding-left:40px"><a id="news" href="#adam-behati" style="font-size: 1.2em;"><img src="../images/adam-behati.jpg" style="width:300px; height:250px; padding-top:0px; padding-left:40px;padding-right: 20px"><p style="padding-left:40px;">ADAM LEVINE AND BEHATI<br> PRINSLOO HAVING A BABY GIRL</p></a></li>
+                </ul>
+
+            </section> 
+
+            <!--Go to top button-->
+            <a href="#pageWrapper"> <button class="top_button">T O P ^</button></a>
+
+            <!--news story number 1-->
+            <section id="gunsnroses">
+            	<span style="font-size:1.5em; font-family: Arial; color:#32403B; padding-left: 30px;"><b>GUNS N' ROSES PLANNING TRIBUTE TO LATE PRINCE AT THE COACHELLA MUSIC FESTIVAL</b></span>
+
+            	<img src="../images/GunsnRoses.jpg" style="padding-top:20px; padding-left:40px; height:20%; width:70%">
+            	
+            	<p id="story-gunsnroses" style="float:right; padding-top:50px; padding-right:40px; font-size:1.3em; font-family:Arial; padding-left:10px;">Prince died on April 21st, at the<br> age of 57. Coachella Weekend<br>2 started 2 days after his death.<br>Everybody felt the loss of the<br>music legend and he was on<br>the mind of everyone attending<br>the music festival, including the<br>Guns N' Roses. They thought<br> of doing something more extra<br>during their performance, other<br>than performing their own<br>songs. And that was, they<br> wanted to pay a tribute to the<br>legend, who was a 80's<br> rockstar.<br><br><img src="../images/Prince.jpg" style="float:right; padding-top: 0px; padding-right:30px; height:170px; width:247px;">
+				</p>
+            	</section>
+
+            <!--news story number 2-->
+            <section id="ariana-grande">
+            	<span style="font-size:1.5em; font-family:Arial; color:#32403B; padding-left:30px;"><b>ARIANA GRNADE'S MOM TOTALLY FREAKING OUT AFTER HEARING HER NEW ALBUM</b></span>
+
+            	<img src="../images/ariana-mom.jpg" style="padding-top:20px; padding-left:40px; height:10%; width:60%"/>
+            	
+            	<p id="story-ariana-mom" style="float:right; padding-top:50px; padding-right:110px; font-size:1.3em; font-family:Arial; padding-left:10px;">Ariana Grande shared her mother's<br> enthusiastic reaction on Instagram to<br> preview a sneak peak to her new<br> album, <b>Dangerous Woman</b>.
+            	<br><br>
+            	Ariana's video on Instagram, shows<br> her mother driving the car and getting<br> excited after listening to her<br> daughter's third studio album.<br> "Ariana!" she screams. "I'm not<br> kidding! That's the best song I've<br> ever heard!", her mother exclaimed,<br> as she finished listening to the new<br> tracks. 
+            	</p>
+			</section>
+
+			<!--news story number 3-->
+			<section id="bruce-jenner">
+				<span style="font-size:1.5em; font-family:Arial; color:#32403B; padding-left:30px;"><b>KOURTNEY KARDASHIAN'S SON 'UNCOMFORTABLE' BY CAITLYN JENNER</b></span>
+
+				<img src="../images/bruce.jpg" style="padding-top:20px; padding-left:40px; height: 7%; width: 20%; float:left"/>
+				<img src="../images/caitlyn.jpg" style="padding-top:20px; padding-right:40px; height: 9%; width: 30%; float:right;"/>
+
+				<p id="story-bruce-jenner" style="padding-left:25%; font-size:1.3em; font-family: Arial; padding-top:20px; padding-right:10%">As we have all known that Bruce Jenner, the<br> step-father and the father of the Jenner sisters,<br> has transformed his gender, Khloe Kardashian finally reveals the reactions of the little ones<br> in the family regarding this on her show<br> "Kocktails with Khloe".
+				<br>
+				<br>
+				In the talk show, Khloe tells us that Kourtney's 6 years old elder son, Mason, was confused at the beginning when he found out that his grandfather now identifies a woman.<br>
+				"Mason was uncomfortable but [would] kind of, like, be distant to Caitlyn, but Caitlyn... understood and handled it perfectly," Kloe says.<br>
+				She even says that Kim Kardashian's 2 years old daughter, North, and Kourtney's 3 years old daughter, Penelope, are not as affected by the change.
+				</p>
+			</section>	
+
+			<!--news story number 4-->
+			<section id="kylie-jenner">
+				<span style="font-size:1.5em; font-family:Arial; color:#32403B;padding-left:50px;"><b>KYLIE JENNER CALLS HERSELF AN 'INSPIRATION' TO YOUNG GIRLS</b></span>
+
+				<img src="../images/kylie2.jpg" style="padding-top:20px; padding-left:40px; height:30%; width:40%;float:left;"/>
+
+				<p id="story-kylie-jenner" style="padding-left:45%; font-size:1.3em; font-family:Arial; padding-top:20px; padding-right:7%">“I haven’t had a dollar of my mom’s money in five years,” she says. “Ever since I started earning my own money, I’ve paid for everything: all my cars, houses, clothes, everything. I like to know exactly what’s going on and I’m actually quite careful with what I spend. We all are as a family,” says Kylie.
+				<br><br>
+				Kylie Jenner calls herself as an 'inspiration' to young girls everywhere in the June issue of <i>Glamour UK</i>, she's a self-made businesswoman, keeping in mind, despite her family's wealth.
+				</p>
+			</section>
+
+			<!--news story number 5-->
+			<section id="selena-gomez">
+				<span style="font-size:1.5em; font-family:Arial; color:#32403B; padding-left:50px;"><b>SELENA GOMEZ: 'I WANNA SHOW  PEOPLE THAT I CAN SING'</b></span>
+
+				<img src="../images/selena.jpg" style="padding-top:20px; float:right; padding-right:40px; width:400px; height:400px"/>
+
+				<p id="story-selena-gomez" style="padding-top:20px; padding-left:50px; font-size:1.3em; font-family:Arial;">“I just wanna perform. I’m not trying to dance as much as I did the last run,” the new face of Coca-Cola’s Share-a-Coke campaign tells <i>The US Magazine</i>. “I really — I just wanna sing. And I wanna show people that I can sing.” - Selena Gomez
+				<br>
+				<br>
+				 In an interview with <i>Us Weekly Video</i>, Selena Gomez spoke about wanting to prove her vocals on her upcoming Revival Tour.<br>
+				 “I have never cared about a tour as much as I care about this one. I’ve never worked as hard,” she says.<br>
+				 Selena even says that she has never been more excited since her performance at 'Star Dance' tour concert in 2013.
+				 <br>
+				 <br>
+				 “Every day I start with a workout, I do vocal lessons, I do piano lessons,” she explains. “I go on stage and we map out the whole thing.”
+				</p>
+			</section>
+
+			<!--news story number 6-->
+			<section id="adam-behati">
+				<span style="font-size:1.5em; font-family:Arial; color:#32403B;"><center><b>ADAM LEVINE AND BEHATI PRINSLOO HAVING A BABY GIRL</b></center></span>
+
+				<center><img src="../images/adam-behati-2.jpeg" style="padding-top:20px;height:400px; width:1000px;"></center>
+
+				<center><p id="story-adam-behati" style="padding-left:40px; padding-right:40px; padding-top:20px; font-size:1.3em; font-family:Arial;">Adam Levine confirms that he is having a baby girl with his wife, Behati Prinsloo, on the episode of <i>Live with Kelly and Michael</i>.
+				<br>
+				<br>
+				“I’m about to be a dad. I’m superpumped,” says Levine, 37, to the show hosts, <b>Michael Strehen</b> and <b>Kelly Ripa</b> about his first time fatherhood. Levine even mentioned Prinsloo's, Victoria's Secret Angel, 26, number 1 craving. “She’s good, man, she’s just, you know, been eating a lot of weird food. Watermelon, that’s the thing in our house. A lot — so much watermelon,” he explains. “Maybe she just, like, really likes watermelon,” Levine added. “I mean, it’s delicious. I’m glad it’s not, like, pickles or some weird thing.” <i>The US Magazine</i> exclusively broke the news of Prinsloo’s pregnancy on March 10. A source told at the time that she and Levine were “over the moon” about impending parenthood.
+				</p></center>
+
+		</main>
+
+		<!--footer division-->
+		<footer>
+			<center>All Rights Reserved<br> &copyLijalaShrestha2016</center>
+		</footer>
+	
+	
+
+	</body>
+	<!--End of body-->
+
+</html>
+<!--End of html tag-->
